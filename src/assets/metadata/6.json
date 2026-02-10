@@ -1,0 +1,11 @@
+{
+  "name": "My NFT #6",
+  "description": "My NFT Collection",
+  "image": "ipfs://QmaB8rnHabwiaAeTb9d4smxyhVkZZjsp1KmVCasyG9agpp",
+  "attributes": [
+    {
+      "trait_type": "Edition",
+      "value": 6
+    }
+  ]
+}

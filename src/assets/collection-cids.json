@@ -1,0 +1,27 @@
+{
+  "images": {
+    "1": "QmPZ3aoSaN5P9YfSzf9yJVC5yrvRUueosEoPZ2S3UahjV2",
+    "2": "QmZmMgYrsmjz4uKytVS5a6p2gv16En5PGnNKwdbMUcVZCU",
+    "3": "QmboBdUKL2W7akLhTNxqFBtyy9oBMqR8DNwGcRZQHSUFna",
+    "4": "QmNp1oYkCeukM4vDicuSybjafdpvE85EmPs4Q9y4h3THbm",
+    "5": "QmUi6JXNsTR3yGGYPBg5J8peL5U75pRXJe9LF1Um32pihi",
+    "6": "QmaB8rnHabwiaAeTb9d4smxyhVkZZjsp1KmVCasyG9agpp",
+    "7": "QmRmJHgSjWuVazQkgBqgfPpFbMp9RhWr8kki96ZZZ9oP6T",
+    "8": "QmWmNkPLocPqYLxQeDxGBEwSeXwd8NWARqrrdVsz2B8YMa",
+    "9": "Qmc1C1dd4U9m9wrcjaNH1evGvJrnwoVkJSdcshcYszS9pU",
+    "10": "QmbmBySf9iUBGxb1oVvKWupMRjoZ4gXLjWn2hsnXY65MhQ"
+  },
+  "metadataFiles": [
+    "1.json",
+    "10.json",
+    "2.json",
+    "3.json",
+    "4.json",
+    "5.json",
+    "6.json",
+    "7.json",
+    "8.json",
+    "9.json"
+  ],
+  "folderCID": "QmbmdfDr4ki6USnjaow1jY9s4wwiffSWKVnkDrh4Z3QrEh"
+}

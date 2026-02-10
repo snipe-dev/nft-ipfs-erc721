@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node dist/monitor.js"
+    "upload": "ts-node src/scripts/upload-nft-collection.ts"
   },
   "dependencies": {
     "axios": "^1.13.5",
@@ -12,7 +12,8 @@
     "viem": "^2.45.0"
   },
   "devDependencies": {
-    "@types/node": "^25.1.0",
+    "@types/node": "^25.2.2",
+    "ts-node": "^10.9.2",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   }
