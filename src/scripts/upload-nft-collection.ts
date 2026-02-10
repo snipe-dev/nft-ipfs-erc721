@@ -90,7 +90,7 @@ async function main() {
 
   const files = fs
     .readdirSync(NFT_DIR)
-    .filter((file) => file.endsWith(".png"));
+    .filter((file) => file.endsWith(".avif"));
 
   const results: any = {
     images: {},
