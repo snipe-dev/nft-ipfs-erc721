@@ -53,14 +53,14 @@ A TypeScript script:
 -   Outputs baseURI for contract deployment
 
 <div align="center">
-    <img src="https://raw.githubusercontent.com/snipe-dev/nft-ipfs-erc721/refs/heads/master/src/assets/screenshot/console-upload.png" width="800" style="margin: 0 10px;" />
+    <img src="https://raw.githubusercontent.com/snipe-dev/nft-ipfs-erc721/refs/heads/master/src/assets/screenshot/console-upload.png" width="1100" style="margin: 0 10px;" />
 </div>
 
 Pinata dashboard showing uploaded files:
 
-::: {align="center"}
-`<img src="./src/assets/screenshots/pinata-files.png" width="100%" />`{=html}
-:::
+<div align="center">
+    <img src="https://raw.githubusercontent.com/snipe-dev/nft-ipfs-erc721/refs/heads/master/src/assets/screenshot/pinata-files.png" width="1100" style="margin: 0 10px;" />
+</div>
 
 ------------------------------------------------------------------------
 
@@ -75,10 +75,9 @@ Minimal ERC-721 contract based on OpenZeppelin with:
 
 Deployed via Remix.
 
-::: {align="center"}
-`<img src="./src/assets/screenshots/remix-deploy.png" width="100%" />`{=html}
-:::
-
+<div align="center">
+    <img src="https://raw.githubusercontent.com/snipe-dev/nft-ipfs-erc721/refs/heads/master/src/assets/screenshot/remix-deploy.png" width="1100" style="margin: 0 10px;" />
+</div>
 ------------------------------------------------------------------------
 
 ## 3. Minting the Collection
@@ -89,10 +88,9 @@ Minting performed via viem script:
 -   Calls mintBatch
 -   Waits for transaction confirmation
 
-::: {align="center"}
-`<img src="./src/assets/screenshots/console-mint.png" width="100%" />`{=html}
-:::
-
+<div align="center">
+    <img src="https://raw.githubusercontent.com/snipe-dev/nft-ipfs-erc721/refs/heads/master/src/assets/screenshot/console-mint.png" width="1100" style="margin: 0 10px;" />
+</div>
 ------------------------------------------------------------------------
 
 ## 4. Fetching NFT Metadata & Images
@@ -105,10 +103,9 @@ The fetch script:
 -   Extracts image field
 -   Outputs final image URL
 
-::: {align="center"}
-`<img src="./src/assets/screenshots/console-fetch.png" width="100%" />`{=html}
-:::
-
+<div align="center">
+    <img src="https://raw.githubusercontent.com/snipe-dev/nft-ipfs-erc721/refs/heads/master/src/assets/screenshot/console-fetch.png" width="1100" style="margin: 0 10px;" />
+</div>
 ------------------------------------------------------------------------
 
 ## Example Resolution
