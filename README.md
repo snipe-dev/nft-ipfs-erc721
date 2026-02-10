@@ -1,11 +1,11 @@
 # NFT IPFS ERC-721 Collection
 
 <div align="center">
-    <img src="https://gateway.pinata.cloud/ipfs/QmVGNKCXwdE3KZ8RZXWdmmrmnT4VtwqWkPCiNzhy8xBTRi" height="200" style="margin: 0 10px;" />
-    <img src="https://gateway.pinata.cloud/ipfs/QmcJX41DqKtdrGjt2dtfDr8jfdHBHyGtxkn8wvFx7TU8VF" height="200" style="margin: 0 10px;" />
-    <img src="https://gateway.pinata.cloud/ipfs/QmWJEM4rWgyy5NUtdsyRXZr3gBAs1tVrj9HmMucf83x8wK" height="200" style="margin: 0 10px;" />
-    <img src="https://gateway.pinata.cloud/ipfs/QmR46SeWPLS1GNXf56ne5hnTYWKJtpYL1wyBF6ERdnV3oa" height="200" style="margin: 0 10px;" />
-    <img src="https://gateway.pinata.cloud/ipfs/QmVxcTi8JCXtLqYA8vcEq9DvcC2Nt2oKo4EgyuoJyz6MZb" height="200" style="margin: 0 10px;" />
+    <img src="https://raw.githubusercontent.com/snipe-dev/nft-ipfs-erc721/refs/heads/master/src/assets/nft/nft%20(1).avif" height="200" style="margin: 0 10px;" />
+    <img src="https://raw.githubusercontent.com/snipe-dev/nft-ipfs-erc721/refs/heads/master/src/assets/nft/nft%20(2).avif" height="200" style="margin: 0 10px;" />
+    <img src="https://raw.githubusercontent.com/snipe-dev/nft-ipfs-erc721/refs/heads/master/src/assets/nft/nft%20(3).avif" height="200" style="margin: 0 10px;" />
+    <img src="https://raw.githubusercontent.com/snipe-dev/nft-ipfs-erc721/refs/heads/master/src/assets/nft/nft%20(4).avif" height="200" style="margin: 0 10px;" />
+    <img src="https://raw.githubusercontent.com/snipe-dev/nft-ipfs-erc721/refs/heads/master/src/assets/nft/nft%20(5).avif" height="200" style="margin: 0 10px;" />
 </div>
 
 ------------------------------------------------------------------------
