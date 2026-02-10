@@ -144,4 +144,3 @@ https://gateway.pinata.cloud/ipfs/QmVGNKCXwdE3KZ8RZXWdmmrmnT4VtwqWkPCiNzhy8xBTRi
 
 This project demonstrates a fully working NFT infrastructure from local
 assets to on-chain tokens.
-.
