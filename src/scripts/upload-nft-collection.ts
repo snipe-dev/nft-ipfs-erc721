@@ -2,9 +2,7 @@ import fs from "fs";
 import path from "path";
 import axios from "axios";
 import FormData from "form-data";
-import dotenv from "dotenv";
-
-dotenv.config();
+import "dotenv/config";
 
 const PINATA_JWT = process.env.PINATA_JWT as string;
 const PINATA_GATEWAY = process.env.PINATA_GATEWAY as string;

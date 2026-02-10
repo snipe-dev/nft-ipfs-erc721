@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "upload": "ts-node src/scripts/upload-nft-collection.ts"
+    "upload": "tsx src/scripts/upload-nft-collection.ts",
+    "mint": "tsx src/scripts/mint-nft-collection.ts"
   },
   "dependencies": {
     "axios": "^1.13.5",

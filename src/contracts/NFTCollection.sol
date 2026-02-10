@@ -1,10 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/utils/Strings.sol";
-
 contract NFTCollection is ERC721, Ownable {
 
     using Strings for uint256;
@@ -47,17 +43,17 @@ contract NFTCollection is ERC721, Ownable {
     }
 
     function tokenURI(uint256 tokenId)
-        public
-        view
-        override
-        returns (string memory)
+    public
+    view
+    override
+    returns (string memory)
     {
-        require(_ownerOf(tokenId) != address(0), "Nonexistent token");
-
+        ownerOf(tokenId); // This will revert if token does not exist
         return string(
             abi.encodePacked(
                 _baseURI(),
-                tokenId.toString()
+                tokenId.toString(),
+                ".json"
             )
         );
     }
