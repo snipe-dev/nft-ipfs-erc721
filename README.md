@@ -117,10 +117,10 @@ The fetch script:
 ## Example Resolution
 
 Metadata:
-https://gateway.pinata.cloud/ipfs/QmbmdfDr4ki6USnjaow1jY9s4wwiffSWKVnkDrh4Z3QrEh/1.json
+https://gateway.pinata.cloud/ipfs/QmSUsQe2gmAqNo5dK4ps5ULyNREpbieS5xRJv37bbWPNfi/1.json
 
 Image:
-https://gateway.pinata.cloud/ipfs/QmPZ3aoSaN5P9YfSzf9yJVC5yrvRUueosEoPZ2S3UahjV2
+https://gateway.pinata.cloud/ipfs/QmVGNKCXwdE3KZ8RZXWdmmrmnT4VtwqWkPCiNzhy8xBTRi
 
 ------------------------------------------------------------------------
 
