@@ -10,7 +10,7 @@ if (!RPC_URL) {
   throw new Error("RPC_URL not set");
 }
 
-const CONTRACT_ADDRESS = "0x772eD9EaCf5EA8c7b94f5089E4D94551778625D1";
+const CONTRACT_ADDRESS = "0xab01589e6fb7504635ABCD70a240EcD5F8f16Ec4";
 const GATEWAY = "https://gateway.pinata.cloud/ipfs/";
 
 function ipfsToHttp(ipfsUri: string): string {

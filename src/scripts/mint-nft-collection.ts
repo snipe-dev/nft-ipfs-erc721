@@ -10,7 +10,7 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY as `0x${string}`;
 if (!RPC_URL) throw new Error("RPC_URL not set");
 if (!PRIVATE_KEY) throw new Error("PRIVATE_KEY not set");
 const account = privateKeyToAccount(PRIVATE_KEY);
-const CONTRACT_ADDRESS = "0x772eD9EaCf5EA8c7b94f5089E4D94551778625D1";
+const CONTRACT_ADDRESS = "0xab01589e6fb7504635ABCD70a240EcD5F8f16Ec4";
 const MINT_TO = account.address;
 const AMOUNT = 10;
 
