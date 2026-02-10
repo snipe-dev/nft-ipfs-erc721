@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "upload": "tsx src/scripts/upload-nft-collection.ts",
-    "mint": "tsx src/scripts/mint-nft-collection.ts"
+    "mint": "tsx src/scripts/mint-nft-collection.ts",
+    "fetch": "tsx src/scripts/fetch-nft-collection.ts"
   },
   "dependencies": {
     "axios": "^1.13.5",
