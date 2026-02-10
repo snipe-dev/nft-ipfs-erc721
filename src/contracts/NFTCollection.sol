@@ -6,6 +6,7 @@ contract NFTCollection is ERC721, Ownable {
     using Strings for uint256;
 
     uint256 private _nextTokenId;
+    uint256 private _totalSupply;
     string private _baseTokenURI;
 
     constructor(
@@ -21,6 +22,8 @@ contract NFTCollection is ERC721, Ownable {
         _nextTokenId++;
 
         _safeMint(to, tokenId);
+
+        _totalSupply++;
     }
 
     function mintBatch(address to, uint256 amount) external onlyOwner {
@@ -31,7 +34,13 @@ contract NFTCollection is ERC721, Ownable {
             _nextTokenId++;
 
             _safeMint(to, tokenId);
+
+            _totalSupply++;
         }
+    }
+
+    function totalSupply() external view returns (uint256) {
+        return _totalSupply;
     }
 
     function _baseURI() internal view override returns (string memory) {
@@ -48,7 +57,7 @@ contract NFTCollection is ERC721, Ownable {
     override
     returns (string memory)
     {
-        ownerOf(tokenId); // This will revert if token does not exist
+        ownerOf(tokenId);
         return string(
             abi.encodePacked(
                 _baseURI(),
