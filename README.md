@@ -1,9 +1,11 @@
 # NFT IPFS ERC-721 Collection
 
 <div align="center">
-    <img src="https://gateway.pinata.cloud/ipfs/QmaB8rnHabwiaAeTb9d4smxyhVkZZjsp1KmVCasyG9agpp" height="200" style="margin: 0 10px;" />
-    <img src="https://gateway.pinata.cloud/ipfs/QmRmJHgSjWuVazQkgBqgfPpFbMp9RhWr8kki96ZZZ9oP6T" height="200" style="margin: 0 10px;"/>
-    <img src="https://gateway.pinata.cloud/ipfs/Qmc1C1dd4U9m9wrcjaNH1evGvJrnwoVkJSdcshcYszS9pU" height="200" style="margin: 0 10px;"/>
+    <img src="https://gateway.pinata.cloud/ipfs/QmVGNKCXwdE3KZ8RZXWdmmrmnT4VtwqWkPCiNzhy8xBTRi" height="200" style="margin: 0 10px;" />
+    <img src="https://gateway.pinata.cloud/ipfs/QmcJX41DqKtdrGjt2dtfDr8jfdHBHyGtxkn8wvFx7TU8VF" height="200" style="margin: 0 10px;" />
+    <img src="https://gateway.pinata.cloud/ipfs/QmWJEM4rWgyy5NUtdsyRXZr3gBAs1tVrj9HmMucf83x8wK" height="200" style="margin: 0 10px;" />
+    <img src="https://gateway.pinata.cloud/ipfs/QmR46SeWPLS1GNXf56ne5hnTYWKJtpYL1wyBF6ERdnV3oa" height="200" style="margin: 0 10px;" />
+    <img src="https://gateway.pinata.cloud/ipfs/QmVxcTi8JCXtLqYA8vcEq9DvcC2Nt2oKo4EgyuoJyz6MZb" height="200" style="margin: 0 10px;" />
 </div>
 
 ------------------------------------------------------------------------
@@ -90,6 +92,10 @@ Minting performed via viem script:
 
 <div align="center">
     <img src="https://raw.githubusercontent.com/snipe-dev/nft-ipfs-erc721/refs/heads/master/src/assets/screenshot/console-mint.png" width="1100" style="margin: 0 10px;" />
+</div>
+
+<div align="center">
+    <img src="https://raw.githubusercontent.com/snipe-dev/nft-ipfs-erc721/refs/heads/master/src/assets/screenshot/bscscan-mint.png" width="1100" style="margin: 0 10px;" />
 </div>
 ------------------------------------------------------------------------
 
