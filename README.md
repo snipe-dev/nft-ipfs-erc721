@@ -1,31 +1,26 @@
 # NFT IPFS ERC-721 Collection
 
-```{=html}
-<p align="center">
-```
-`<img src="https://gateway.pinata.cloud/ipfs/QmPZ3aoSaN5P9YfSzf9yJVC5yrvRUueosEoPZ2S3UahjV2" height="100"/>`{=html}
-`<img src="https://gateway.pinata.cloud/ipfs/QmZmMgYrsmjz4uKytVS5a6p2gv16En5PGnNKwdbMUcVZCU" height="100"/>`{=html}
-`<img src="https://gateway.pinata.cloud/ipfs/QmboBdUKL2W7akLhTNxqFBtyy9oBMqR8DNwGcRZQHSUFna" height="100"/>`{=html}
-`<img src="https://gateway.pinata.cloud/ipfs/QmNp1oYkCeukM4vDicuSybjafdpvE85EmPs4Q9y4h3THbm" height="100"/>`{=html}
-```{=html}
-</p>
-```
+<div align="center">
+    <img src="https://gateway.pinata.cloud/ipfs/QmaB8rnHabwiaAeTb9d4smxyhVkZZjsp1KmVCasyG9agpp" height="200" style="margin: 0 10px;" />
+    <img src="https://gateway.pinata.cloud/ipfs/QmRmJHgSjWuVazQkgBqgfPpFbMp9RhWr8kki96ZZZ9oP6T" height="200" style="margin: 0 10px;"/>
+    <img src="https://gateway.pinata.cloud/ipfs/Qmc1C1dd4U9m9wrcjaNH1evGvJrnwoVkJSdcshcYszS9pU" height="200" style="margin: 0 10px;"/>
+</div>
 
 ------------------------------------------------------------------------
 
 ## Overview
 
-This project demonstrates a complete NFT pipeline:
+This repository demonstrates a complete NFT lifecycle:
 
--   Uploading images to IPFS (via Pinata)
+-   Uploading images to IPFS (Pinata)
 -   Generating metadata JSON files
--   Uploading metadata folder to IPFS
+-   Uploading a metadata folder
 -   Deploying an ERC-721 contract
--   Minting a collection on-chain
--   Fetching NFT metadata and images via viem
+-   Minting NFTs on-chain
+-   Fetching metadata and images using viem
 
-The contract uses a baseURI pointing to an IPFS folder containing
-metadata files.
+The contract uses a baseURI pointing to an IPFS folder that stores token
+metadata.
 
 ------------------------------------------------------------------------
 
@@ -47,81 +42,82 @@ metadata files.
 
 ------------------------------------------------------------------------
 
-## 1️⃣ Uploading Images & Metadata to IPFS
+## 1. Uploading Images & Metadata to IPFS
 
-Images were uploaded using a TypeScript script that:
+A TypeScript script:
 
--   Reads local PNG files
--   Uploads each file to Pinata
--   Generates metadata JSON
+-   Reads PNG files from local folder
+-   Uploads images to Pinata
+-   Generates metadata JSON per token
 -   Uploads metadata folder
--   Outputs baseURI for contract usage
+-   Outputs baseURI for contract deployment
 
-`<img src="./src/assets/screenshots/console-upload.png" width="100%"/>`{=html}
+<div align="center">
+    <img src="https://raw.githubusercontent.com/snipe-dev/nft-ipfs-erc721/refs/heads/master/src/assets/screenshot/console-upload.png" width="800" style="margin: 0 10px;" />
+</div>
 
-The uploaded files are visible in Pinata:
+Pinata dashboard showing uploaded files:
 
-`<img src="./src/assets/screenshots/pinata-files.png" width="100%"/>`{=html}
-
-------------------------------------------------------------------------
-
-## 2️⃣ Smart Contract Deployment
-
-The contract is a minimal ERC-721 implementation with:
-
--   `mint(address)`
--   `mintBatch(address,uint256)`
--   `setBaseURI(string)`
--   Overridden `tokenURI(uint256)`
-
-Deployment was done via Remix.
-
-`<img src="./src/assets/screenshots/remix-deploy.png" width="100%"/>`{=html}
+::: {align="center"}
+`<img src="./src/assets/screenshots/pinata-files.png" width="100%" />`{=html}
+:::
 
 ------------------------------------------------------------------------
 
-## 3️⃣ Minting the Collection
+## 2. Smart Contract Deployment
 
-NFTs were minted using a viem-based script that:
+Minimal ERC-721 contract based on OpenZeppelin with:
+
+-   mint(address)
+-   mintBatch(address,uint256)
+-   setBaseURI(string)
+-   Overridden tokenURI(uint256)
+
+Deployed via Remix.
+
+::: {align="center"}
+`<img src="./src/assets/screenshots/remix-deploy.png" width="100%" />`{=html}
+:::
+
+------------------------------------------------------------------------
+
+## 3. Minting the Collection
+
+Minting performed via viem script:
 
 -   Verifies contract owner
--   Calls `mintBatch`
--   Confirms transaction receipt
+-   Calls mintBatch
+-   Waits for transaction confirmation
 
-`<img src="./src/assets/screenshots/console-mint.png" width="100%"/>`{=html}
-
-------------------------------------------------------------------------
-
-## 4️⃣ Fetching NFT Metadata & Images
-
-A script connects to the deployed contract and:
-
--   Calls `tokenURI(tokenId)`
--   Converts `ipfs://` to gateway URL
--   Fetches metadata JSON
--   Extracts `image`
--   Outputs final image URLs
-
-`<img src="./src/assets/screenshots/console-fetch.png" width="100%"/>`{=html}
+::: {align="center"}
+`<img src="./src/assets/screenshots/console-mint.png" width="100%" />`{=html}
+:::
 
 ------------------------------------------------------------------------
 
-## Result
+## 4. Fetching NFT Metadata & Images
 
-Each NFT resolves as:
+The fetch script:
 
-    tokenURI(tokenId)
-    → IPFS metadata
-    → image CID
-    → Gateway URL
+-   Calls tokenURI(tokenId)
+-   Converts ipfs:// to gateway URL
+-   Downloads metadata JSON
+-   Extracts image field
+-   Outputs final image URL
 
-Example:
+::: {align="center"}
+`<img src="./src/assets/screenshots/console-fetch.png" width="100%" />`{=html}
+:::
 
--   Metadata:
-    https://gateway.pinata.cloud/ipfs/QmbmdfDr4ki6USnjaow1jY9s4wwiffSWKVnkDrh4Z3QrEh/1.json
+------------------------------------------------------------------------
 
--   Image:
-    https://gateway.pinata.cloud/ipfs/QmPZ3aoSaN5P9YfSzf9yJVC5yrvRUueosEoPZ2S3UahjV2
+## Example Resolution
+
+Metadata:
+https://gateway.pinata.cloud/ipfs/QmbmdfDr4ki6USnjaow1jY9s4wwiffSWKVnkDrh4Z3QrEh/1.json
+
+Image:
+https://gateway.pinata.cloud/ipfs/QmPZ3aoSaN5P9YfSzf9yJVC5yrvRUueosEoPZ2S3UahjV2
 
 ------------------------------------------------------------------------
 
@@ -143,5 +139,5 @@ Example:
 ✔ Metadata Fetch Working\
 ✔ Image Resolution Working
 
-This repository demonstrates a fully working NFT infrastructure from
-local assets to on-chain tokens.
+This project demonstrates a fully working NFT infrastructure from local
+assets to on-chain tokens.
