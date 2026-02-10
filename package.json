@@ -1,14 +1,17 @@
 {
   "name": "nft-ipfs-erc721",
-  "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "build": "tsc"
+    "start": "node dist/monitor.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "viem": "^2.45.0"
+  },
   "devDependencies": {
-    "typescript": "^5.5.3"
-  },
-  "private": true
+    "@types/node": "^25.1.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
 }
