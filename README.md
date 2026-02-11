@@ -122,6 +122,9 @@ https://gateway.pinata.cloud/ipfs/QmSUsQe2gmAqNo5dK4ps5ULyNREpbieS5xRJv37bbWPNfi
 Image:
 https://gateway.pinata.cloud/ipfs/QmVGNKCXwdE3KZ8RZXWdmmrmnT4VtwqWkPCiNzhy8xBTRi
 
+BEP-721 Contract:
+https://testnet.bscscan.com/token/0xab01589e6fb7504635abcd70a240ecd5f8f16ec4
+
 ------------------------------------------------------------------------
 
 ## Tech Stack
